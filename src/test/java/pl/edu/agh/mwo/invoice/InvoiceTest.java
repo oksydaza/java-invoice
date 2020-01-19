@@ -42,7 +42,7 @@ public class InvoiceTest {
 		invoice.addProduct(taxFreeProduct);
 		Assert.assertThat(invoice.getTotal(), Matchers.comparesEqualTo(invoice.getSubtotal()));
 	}
-
+ 
 	@Test
 	public void testInvoiceHasProperSubtotalForManyProducts() {
 		invoice.addProduct(new TaxFreeProduct("Owoce", new BigDecimal("200")));
