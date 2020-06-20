@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
 import pl.edu.agh.mwo.invoice.product.Product;
+import org.apache.commons.lang3.*;
 
 public class Invoice {
     private Map<Product, Integer> products = new HashMap<>();
@@ -45,5 +46,12 @@ public class Invoice {
 
     public int getNumber() {
         return number;
+    }
+    
+    public String getProducts() {
+//    	public String convertWithApache(Map map) {
+//    	    return StringUtils.join(map);
+//    	}
+    	return StringUtils.join(products);
     }
 }

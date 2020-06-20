@@ -129,4 +129,12 @@ public class InvoiceTest {
         int number2 = new Invoice().getNumber();
         Assert.assertThat(number1, Matchers.lessThan(number2));
     }
+    
+    @Test
+    public void testPrintInvoiceProductsList() {
+    	System.out.println("Lista produktow");
+    	invoice.addProduct(new TaxFreeProduct("Chleb", new BigDecimal("5")), 2);
+    	invoice.addProduct(new TaxFreeProduct("Zsiadle mleko", new BigDecimal("5")), 4);
+    	System.out.println(invoice.getProducts());
+    }
 }
