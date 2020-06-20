@@ -301,8 +301,4 @@ but without javadoc requirements and with severity set to error.
             <property name="optional" value="true"/>
         </module>
     </module>
-<<<<<<< HEAD
 </module>
-=======
-</module>
->>>>>>> 046c7a0d77afa3ce82e3bf1c2ab0b65da5c832d4
